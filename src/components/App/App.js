@@ -14,7 +14,6 @@ class App extends Component {
       tiles: [],
       toBeCleared: null
     }
-    this.startGame
   }
 
   startGame (numTiles) {
@@ -23,7 +22,7 @@ class App extends Component {
         playing: true,
         previousTileIndex: null,
         toBeCleared: null,
-        tiles: createTiles(numTiles)
+        tiles: createTiles(state.numTiles)
       }
     })
   }
@@ -37,7 +36,7 @@ class App extends Component {
         <OptionsPanel
           playing={this.state.playing}
           numTiles={this.state.numTiles}
-          startGame={this.startGame.bind(this)}
+          startGame={this.startGame}
         />
         <Board
           numTiles={this.state.numTiles}
