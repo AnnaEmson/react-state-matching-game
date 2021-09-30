@@ -8,3 +8,7 @@ const Button = ({playing, startGame}) => (
 )
 
 export default Button
+
+
+
+// const Button = (props) => ( <button onClick={props.startGame}>{props.playing ? 'reset' : 'start'}</button> )
