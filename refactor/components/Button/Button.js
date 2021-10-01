@@ -1,9 +1,8 @@
 import React from 'react'
+import './Button.css'
 import GameContext from '../../GameContext'
 
-import './Button.css'
-
-const Button = (props) => {
+const Button = (props) => (
   <GameContext.Consumer>
     {
       ({ playing, startGame }) =>
@@ -12,6 +11,6 @@ const Button = (props) => {
         </button>
     }
   </GameContext.Consumer>
-}
+)
 
 export default Button
