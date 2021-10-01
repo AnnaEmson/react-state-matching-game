@@ -12,12 +12,11 @@ describe('Board', () => {
   const wrapper = shallow(<Board tiles={tiles} />)
 
   it('Passes props from the board to tiles @pass-board-props-to-tiles', () => {
-
     let firstTileProps = wrapper.find(Tile).at(0)
 
     try {
       firstTileProps = firstTileProps.props()
-    } catch(error){
+    } catch (error) {
 
     }
 
@@ -25,7 +24,7 @@ describe('Board', () => {
 
     try {
       firstTileKey = firstTileKey.key()
-    } catch(error) {
+    } catch (error) {
 
     }
 
@@ -50,5 +49,4 @@ describe('Board', () => {
 
     expect(tileLength, 'Did you create an array of <Tile /> components?').toEqual(12)
   })
-
 })

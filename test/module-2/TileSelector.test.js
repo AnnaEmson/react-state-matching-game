@@ -9,11 +9,7 @@ describe('TileSelector', () => {
   const instance = wrapper.instance()
 
   it('Passes the numTiles prop as a child to the tileSelectorDropDown @render-num-tiles', () => {
-
     const numTiles = wrapper.find('.tileSelectorDropdown').childAt(0).text()
     expect(numTiles, 'Did you pass the numTiles prop to TileSelector?').toEqual('99')
   })
-
 })
-
-

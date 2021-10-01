@@ -7,7 +7,7 @@ import TileSelector from '../../src/components/TileSelector'
 import { shallow } from 'enzyme'
 
 describe('OptionsPanel', () => {
-  const wrapper = shallow(<OptionsPanel numTiles={42} playing={true} startGame={() => {}}/>)
+  const wrapper = shallow(<OptionsPanel numTiles={42} playing startGame={() => {}} />)
 
   it('Passes props to the TileSelector @pass-props-to-tile-selector', () => {
     const tileSelectorProps = wrapper.find(TileSelector).props()
@@ -27,5 +27,3 @@ describe('OptionsPanel', () => {
     expect(typeof buttonProps.startGame, 'Did you pass the startGame prop to the Button?').toEqual('function')
   })
 })
-
-

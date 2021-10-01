@@ -16,8 +16,8 @@ describe('Refactor', () => {
       OptionsPanel = require('../../refactor/components/OptionsPanel/OptionsPanel.js')
       Tile = require('../../refactor/components/Tile/Tile.js')
       TileSelector = require('../../refactor/components/TileSelector/TileSelector.js')
-    } catch(error) {
-      expect(false,  'Did you copy over the src directory into a new directory refactor?').toBe(true)
+    } catch (error) {
+      expect(false, 'Did you copy over the src directory into a new directory refactor?').toBe(true)
     }
 
     expect(App, 'Did you copy over the src directory into a new directory refactor?').toBeTruthy()

@@ -7,6 +7,4 @@ import six from '../assets/svgs/6'
 import seven from '../assets/svgs/7'
 import eight from '../assets/svgs/8'
 
-
 export default [one, two, three, four, five, six, seven, eight]
-

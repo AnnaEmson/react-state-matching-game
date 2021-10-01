@@ -11,7 +11,7 @@ describe('TileSelector', () => {
   const mockRef = jest.fn()
   useHover.default = jest.fn()
 
-  useHover.default.mockReturnValue([() => 'reff' , true])
+  useHover.default.mockReturnValue([() => 'reff', true])
 
   const wrapper = mount(<TileSelector numTiles={99} handleNumTileChange={mockHandleClick} />)
   const instance = wrapper.instance()
@@ -23,11 +23,10 @@ describe('TileSelector', () => {
   it('adds onClick attributes to numbers @on-click-dropdown', () => {
     const numbers = wrapper.find('.number')
     numbers.at(0).simulate('click')
-    expect(mockHandleClick, 'Did you pass the right number into the handleNumTileChange function?' ).toHaveBeenCalledWith(4)
+    expect(mockHandleClick, 'Did you pass the right number into the handleNumTileChange function?').toHaveBeenCalledWith(4)
     numbers.at(1).simulate('click')
-    expect(mockHandleClick,'Did you pass the right number into the handleNumTileChange function?'  ).toHaveBeenCalledWith(16)
+    expect(mockHandleClick, 'Did you pass the right number into the handleNumTileChange function?').toHaveBeenCalledWith(16)
     numbers.at(2).simulate('click')
-    expect(mockHandleClick, 'Did you pass the right number into the handleNumTileChange function?' ).toHaveBeenCalledWith(36)
+    expect(mockHandleClick, 'Did you pass the right number into the handleNumTileChange function?').toHaveBeenCalledWith(36)
   })
 })
-
